@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 
 @Configuration
-class EventBusConfig {
+class GuavaEventBusConfig {
     @Bean
     fun generalEventBus(): EventBus {
         // 1:1 with subscribe registry
@@ -17,7 +17,7 @@ class EventBusConfig {
         return eventBus
     }
 
-    @Bean
+    @Bean(name = ["guavaEventPublisher"])
     fun eventPublisher(eventBus: EventBus): EventPublisher {
         return EventPublisher(eventBus)
     }

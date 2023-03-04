@@ -1,4 +1,4 @@
-package com.example.eventbus.spring
+package com.example.eventbus.spring.event
 
 import org.springframework.context.ApplicationEvent
 

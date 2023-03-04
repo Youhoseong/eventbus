@@ -8,11 +8,11 @@ import org.springframework.boot.ApplicationRunner
 import org.springframework.stereotype.Component
 
 @Component
-class TestRunner(private val eventPublisher: EventPublisher): ApplicationRunner {
+class GuavaTestRunner(private val guavaEventPublisher: EventPublisher): ApplicationRunner {
     override fun run(args: ApplicationArguments?) {
         run {
-            eventPublisher.publish(GeneralEvent("hello"))
-            eventPublisher.publish(SpecifiedEvent("hi"))
+            guavaEventPublisher.publish(GeneralEvent("hello"))
+            guavaEventPublisher.publish(SpecifiedEvent("hi"))
         }
     }
 }

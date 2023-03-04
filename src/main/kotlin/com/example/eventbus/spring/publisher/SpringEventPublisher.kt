@@ -1,6 +1,6 @@
 package com.example.eventbus.spring.publisher
 
-import com.example.eventbus.spring.SpringEvent
+import com.example.eventbus.spring.event.SpringEvent
 import org.springframework.context.ApplicationEventPublisher
 
 class SpringEventPublisher(
