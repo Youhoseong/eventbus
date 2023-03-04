@@ -1,4 +1,4 @@
-package com.example.eventbus.event
+package com.example.eventbus.guava.event
 
 sealed interface Event {
     val contents: String

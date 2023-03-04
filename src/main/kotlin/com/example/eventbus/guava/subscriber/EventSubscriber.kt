@@ -1,7 +1,7 @@
 package com.example.eventbus.guava.subscriber
 
 import com.example.eventbus.guava.publisher.EventPublisher
-import com.example.eventbus.event.GeneralEvent
+import com.example.eventbus.guava.event.GeneralEvent
 import com.google.common.eventbus.Subscribe
 import org.slf4j.LoggerFactory
 

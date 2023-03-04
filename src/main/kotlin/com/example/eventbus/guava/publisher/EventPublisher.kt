@@ -1,6 +1,6 @@
 package com.example.eventbus.guava.publisher
 
-import com.example.eventbus.event.Event
+import com.example.eventbus.guava.event.Event
 import com.google.common.eventbus.EventBus
 
 class EventPublisher(private val eventBus: EventBus) {
