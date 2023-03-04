@@ -1,4 +1,4 @@
-package com.example.eventbus.publisher
+package com.example.eventbus.guava.publisher
 
 import com.example.eventbus.event.Event
 import com.google.common.eventbus.EventBus

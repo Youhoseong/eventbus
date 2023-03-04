@@ -1,4 +1,4 @@
-package com.example.eventbus.subscriber
+package com.example.eventbus.guava.subscriber
 
 import com.google.common.eventbus.DeadEvent
 import com.google.common.eventbus.Subscribe

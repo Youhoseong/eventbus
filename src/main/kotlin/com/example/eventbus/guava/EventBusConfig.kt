@@ -1,8 +1,8 @@
-package com.example.eventbus
+package com.example.eventbus.guava
 
-import com.example.eventbus.publisher.EventPublisher
-import com.example.eventbus.subscriber.DeadEventSubscriber
-import com.example.eventbus.subscriber.EventSubscriber
+import com.example.eventbus.guava.publisher.EventPublisher
+import com.example.eventbus.guava.subscriber.DeadEventSubscriber
+import com.example.eventbus.guava.subscriber.EventSubscriber
 import com.google.common.eventbus.EventBus
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration

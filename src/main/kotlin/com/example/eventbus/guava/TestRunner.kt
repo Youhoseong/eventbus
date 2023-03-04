@@ -1,8 +1,8 @@
-package com.example.eventbus
+package com.example.eventbus.guava
 
 import com.example.eventbus.event.GeneralEvent
 import com.example.eventbus.event.SpecifiedEvent
-import com.example.eventbus.publisher.EventPublisher
+import com.example.eventbus.guava.publisher.EventPublisher
 import org.springframework.boot.ApplicationArguments
 import org.springframework.boot.ApplicationRunner
 import org.springframework.stereotype.Component
