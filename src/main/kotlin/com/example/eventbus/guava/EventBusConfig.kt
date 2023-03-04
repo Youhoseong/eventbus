@@ -6,12 +6,11 @@ import com.example.eventbus.guava.subscriber.EventSubscriber
 import com.google.common.eventbus.EventBus
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
-import java.util.concurrent.Executor
 
 @Configuration
 class EventBusConfig {
     @Bean
-    fun generalEventBus(executor: Executor): EventBus {
+    fun generalEventBus(): EventBus {
         // 1:1 with subscribe registry
         val eventBus = EventBus("generalEventBus")
         registerSubscribers(eventBus)
@@ -19,7 +18,7 @@ class EventBusConfig {
     }
 
     @Bean
-    fun generalEventListener(eventBus: EventBus): EventPublisher {
+    fun eventPublisher(eventBus: EventBus): EventPublisher {
         return EventPublisher(eventBus)
     }
 
